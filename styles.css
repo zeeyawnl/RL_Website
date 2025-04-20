@@ -1,4 +1,18 @@
-/* Import futuristic font for the game theme */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #0c0c0c; /* your theme's base color */
+  }
+  
+  
+  body {
+    background-color: #0c0c0c;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 /* Reset default styles and set the font */
@@ -84,7 +98,8 @@ nav ul li a:hover {
 
 /* Gameplay section styling */
 .gameplay {
-    background: url('images/pexels-mayday-1365795.jpg') no-repeat center center/cover;
+    background: url('images/pexels-mayday-1365795.jpg') no-repeat center center;
+   
     transition: transform 0.3s ease-in-out;
 }
 
@@ -126,7 +141,7 @@ p {
 
 .btn:hover {
     background: #d63031;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 /* Style the gameplay video */
 .game-video {
@@ -142,3 +157,74 @@ p {
 .game-video:hover {
     transform: scale(1.05);
 }
+/* Gameplay Video Section - matches landing theme */
+.gameplay-videos {
+    padding: 80px 20px;
+    background-color: #0c0c0c;
+    text-align: center;
+    border-top: 2px solid #aa0000;
+    border-bottom: 2px solid #aa0000;
+  }
+  
+  .section-heading {
+    font-size: 46px;
+    color: #ff3c00;
+    margin-bottom: 90px;
+    margin-top: 40px;
+    letter-spacing: 1px;
+    font-family: 'Orbitron', sans-serif; /* Or match your main font */
+    text-shadow: 0 0 6px rgba(255, 60, 0, 0.6);
+  }
+  
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 60px;
+    max-width: 1300px;
+    max-height: 1300px;
+    margin: 0 auto;
+  }
+  
+  .video-item {
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 12px rgba(255, 60, 0, 0.2);
+    
+  }
+  
+  .video-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(255, 60, 0, 0.4);
+  }
+  
+  .game-video {
+    width: 100%;
+    height: max-content;
+    display: block;
+  }
+  
+  .video-title {
+    font-size: 15px;
+    color: #ccc;
+    padding: 12px 10px;
+    background-color: #111;
+    margin: 0;
+    font-weight: 400;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .video-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  
