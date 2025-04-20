@@ -1,0 +1,144 @@
+/* Import futuristic font for the game theme */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+/* Reset default styles and set the font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Full-screen background styling */
+body {
+    background: url('images/doom-style-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+/* Dark overlay to enhance readability */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Header with game title and navigation */
+header {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    z-index: 2;
+}
+
+/* Game title with glowing effect */
+.game-title {
+    font-size: 2.5rem;
+    color: #ff4500;
+    text-shadow: 2px 2px 10px rgba(255, 69, 0, 0.8);
+}
+
+/* Navigation menu styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff4500;
+}
+
+/* Section layout - full height for immersive experience */
+.hero, .gameplay, .about {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Hero section with background image */
+.hero {
+    background: url('images/fantasy-endless-hole-landscape.jpg') no-repeat center center/cover;
+}
+
+/* Gameplay section styling */
+.gameplay {
+    background: url('images/pexels-mayday-1365795.jpg') no-repeat center center/cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gameplay:hover {
+    transform: scale(1.05);
+}
+
+/* About section styling */
+.about {
+    background: url('images/3d-fantasy-scene.jpg') no-repeat center center/cover;
+}
+
+/* Headings with glowing effect */
+h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px rgba(255, 69, 0, 0.8);
+}
+
+/* Paragraphs with max width for readability */
+p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+/* Button styling for interaction */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #ff4500;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.3s, background 0.3s;
+    box-shadow: 0px 0px 10px rgba(255, 69, 0, 0.8);
+}
+
+.btn:hover {
+    background: #d63031;
+    transform: scale(1.1);
+}
+/* Style the gameplay video */
+.game-video {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border: 3px solid #ff4500; /* Doom-style border */
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 69, 0, 0.8);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for video */
+.game-video:hover {
+    transform: scale(1.05);
+}
