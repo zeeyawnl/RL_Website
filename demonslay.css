@@ -1,0 +1,63 @@
+/* DEMONSLAY CSS */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+  
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+  }
+  
+  #vanta-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Makes sure it's in the background */
+    top: 0;
+    left: 0;
+  }
+  
+  .video-wrapper {
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .section-heading {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #ffd700;
+    text-shadow: 0 0 10px #ffea00, 0 0 20px #ffea00;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+  }
+  
+  .video-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .video-item {
+    max-width: 700px;
+    width: 90%;
+    text-align: center;
+  }
+  
+  .game-video {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(255, 223, 0, 0.3);
+  }
+  
+  .video-title {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #fff68f;
+    text-shadow: 0 0 5px #ffde59;
+  }
+  

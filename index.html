@@ -13,7 +13,7 @@
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="gameplay.html">Gameplay</a></li>
+               
                 <li><a href="#about">About</a></li>
             </ul>
         </nav>
@@ -21,17 +21,101 @@
     
     <section class="hero" id="home">
         <div class="content">
-            <h2>Enter the Hell Zone</h2>
-            <p>Survive the chaos. Destroy the demons. Experience FPS action like never before.</p>
-            <a href="gameplay.html" class="btn">WATCH GAMEPLAY</a>
+            <h2>Enter the Future</h2>
+            <p>Survive the chaos Adapt with RL Bots  Experience FPS action like never before.</p>
+            
+            <a href="gameplay.html" class="btn red-btn">DOOM GAMEPLAY</a>
+            <a href="STREET-FIGHTER.html" class="btn yellow-btn">STREET FIGHTER</a>
+
+
         </div>
     </section>
     
     
     
     <section class="about" id="about">
-        <h2>About the Game</h2>
-        <p>Killzone: Hellfire is a first-person shooter inspired by classic DOOM-style gameplay, featuring high-speed movement and a relentless battle against demonic forces.</p>
-    </section>
+        <h2 class="section-heading">About The Game</h2>
+        <div class="card-container">
+          <div class="game-card" onclick="flipCard(this)">
+            <div class="card-inner">
+              <div class="card-front">
+                <h3>Gameplay</h3>
+              </div>
+              <div class="card-back">
+                <p> RL algorithms
+                    allow game characters (agents) to explore the game environment, make decisions,
+                    and receive rewards like winning outcomes or penalties.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="game-card" onclick="flipCard(this)">
+            <div class="card-inner">
+              <div class="card-front">
+                <h3>Motivation</h3>
+              </div>
+              <div class="card-back">
+                <p>The motivation behind using reinforcement learning in gaming appeals to
+                    users by highlighting the exciting possibilities of developing intelligent and
+                    adaptive AI agents capable of mastering complex environments.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="game-card" onclick="flipCard(this)">
+            <div class="card-inner">
+              <div class="card-front">
+                <h3>Enemies</h3>
+              </div>
+              <div class="card-back">
+                <p>Games provide the perfect testing ground because they
+                    simulate dynamic, rule-based worlds where agents can experiment, learn from
+                    feedback, and adapt strategies based on their performance.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="game-card" onclick="flipCard(this)">
+            <div class="card-inner">
+              <div class="card-front">
+                <h3>Environment</h3>
+              </div>
+              <div class="card-back">
+                <p>It is responsible for simulating the game environment where agents will
+                    interact. The environment provides real-time feedback to the agents by sending
+                    state information (game status, player position, score) and receiving
+                    actions from agent.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
 </body>
+<script>
+    function flipCard(card) {
+      card.classList.toggle("flipped");
+    }
+  </script>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script>
+  function openCard(card) {
+    if (card.classList.contains("opened")) {
+      card.classList.remove("opened");
+    } else {
+      document.querySelectorAll(".game-card").forEach(c => c.classList.remove("opened"));
+      card.classList.add("opened");
+
+      anime({
+        targets: card,
+        scale: [0.9, 1],
+        easing: 'easeOutElastic(1, .8)',
+        duration: 800
+      });
+    }
+  }
+</script>
+
 </html>
