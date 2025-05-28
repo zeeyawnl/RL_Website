@@ -1,4 +1,4 @@
-![Screenshot 2025-05-28 205147](https://github.com/user-attachments/assets/25d46284-09e2-4d71-a6b9-e02712fd699c)![image](https://github.com/user-attachments/assets/9cdd8e58-5250-4c80-a612-decaf3a7c057)# 🤖🎮 Reinforcement Learning x Gaming Website
+![Screenshot 2025-05-28 205147]![image](https://github.com/user-attachments/assets/9cdd8e58-5250-4c80-a612-decaf3a7c057)# 🤖🎮 Reinforcement Learning x Gaming Website
 
 An interactive website that showcases the power of Reinforcement Learning (RL) through playable games powered by real-time learning agents.
 
