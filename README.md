@@ -2,7 +2,7 @@
 
 An interactive website that showcases the power of Reinforcement Learning (RL) through playable games powered by real-time learning agents.
 
-[🚀 Live Demo](https://zeeyawnl.github.io/RL_Website/STREET-FIGHTER.html)
+[🚀 Live Demo](https://zeeyawnl.github.io/RL_Website/)
 
 ---
 
